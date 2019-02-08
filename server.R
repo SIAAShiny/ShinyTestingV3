@@ -21,12 +21,12 @@
 
 #packrat::status()
 
-library(reticulate)
+library('~/packrat/reticulate')
 py_install(c('numpy','pandas','nltk','gensim'))
 nltkdown <- import('nltk')
 nltkdown$download('all')
 source_python('TextSimilarity-Production.py')
-library(shiny)
+library('~/packrat/shiny')
 
 # Define server logic required to draw a histogram
 shinyServer(function(input, output, session) {
