@@ -4,6 +4,11 @@ RVersion: 3.4.0
 Repos: CRAN=https://cran.rstudio.com/,
     CRANextra=http://www.stats.ox.ac.uk/pub/RWin
 
+Package: Matrix
+Source: CRAN
+Version: 1.2-9
+Hash: 2ebcd58cfc6ac9afedc39c1795a704c8
+
 Package: R6
 Source: CRAN
 Version: 2.2.2
