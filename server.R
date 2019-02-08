@@ -14,9 +14,12 @@
 #packrat::set_opts(external.packages = c('reticulate'))
 
 #packrat::snapshot()
+#packrat::snapshot(ignore.stale = TRUE)
 #.libPaths("C:/Users/antutlan/Microsoft/DSSInsightsAA - PFH-DEV2/CPENew/CPENew/CPE-Shiny/ShinyGithub2/SimilarityText/packrat/lib/x86_64-w64-mingw32/3.4.0")
 
 #install.packages("Matrix")
+
+#packrat::status()
 
 library(reticulate)
 py_install(c('numpy','pandas','nltk','gensim'))

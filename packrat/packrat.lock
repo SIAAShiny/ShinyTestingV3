@@ -55,15 +55,11 @@ Package: reticulate
 Source: github
 Version: 1.10.0.9003
 Hash: 4c68d9455273c2e6ef2602534e27509f
-Requires: Rcpp, jsonlite
+Requires: Matrix, Rcpp, jsonlite
 GithubRepo: reticulate
 GithubUsername: rstudio
 GithubRef: master
 GithubSha1: b05b0982757190ea88941176808642ffb89cc6d0
-RemoteHost: https://api.github.com
-RemoteRepo: reticulate
-RemoteUsername: rstudio
-RemoteSha: b05b0982757190ea88941176808642ffb89cc6d0
 
 Package: shiny
 Source: CRAN
