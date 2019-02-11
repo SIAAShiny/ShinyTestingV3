@@ -41,7 +41,7 @@ library(reticulate)
 #py_install(c('numpy','pandas','nltk','gensim'))
 #nltkdown <- import('nltk')
 #nltkdown$download('all')
-#source_python('TextSimilarity-Production.py')
+source_python('TextSimilarity-Production.py')
 #library(shiny,lib.loc = 'packrat/src/')
 
 library(shiny)
