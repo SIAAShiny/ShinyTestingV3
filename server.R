@@ -20,11 +20,18 @@
 #install.packages("Matrix")
 
 #packrat::status()
-install.packages("packrat/src/Matrix/Matrix_1.2-9.tar.gz",lib=".",repos=NULL,verbose=TRUE)
-library(Matrix,lib.loc=".",verbose=TRUE)
+#install.packages("packrat/src/digest/digest_0.6.18.tar.gz",lib=".",repos=NULL,verbose=TRUE)
+#install.packages("packrat/src/htmltools/htmltools_0.3.6.tar.gz",lib=".",repos=NULL,verbose=TRUE)
+#install.packages("packrat/src/httpuv/htmltools_0.3.6.tar.gz",lib=".",repos=NULL,verbose=TRUE)
 
-install.packages("packrat/src/reticulate/b05b0982757190ea88941176808642ffb89cc6d0.tar.gz",lib=".",repos=NULL,verbose=TRUE)
-library(reticulate,lib.loc=".",verbose=TRUE)
+#install.packages("packrat/src/Matrix/Matrix_1.2-9.tar.gz",lib=".",repos=NULL,verbose=TRUE)
+#library(Matrix,lib.loc=".",verbose=TRUE)
+
+packrat::restore()
+
+
+#install.packages("packrat/src/reticulate/b05b0982757190ea88941176808642ffb89cc6d0.tar.gz",lib=".",repos=NULL,verbose=TRUE)
+#library(reticulate,lib.loc=".",verbose=TRUE)
 
 #library(reticulate,lib.loc = 'packrat/src/')
 py_install(c('numpy','pandas','nltk','gensim'))
