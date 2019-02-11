@@ -27,18 +27,24 @@
 #install.packages("packrat/src/Matrix/Matrix_1.2-9.tar.gz",lib=".",repos=NULL,verbose=TRUE)
 #library(Matrix,lib.loc=".",verbose=TRUE)
 
-packrat::restore()
-
+#packrat::restore()
+#packrat::snapshot()
 
 #install.packages("packrat/src/reticulate/b05b0982757190ea88941176808642ffb89cc6d0.tar.gz",lib=".",repos=NULL,verbose=TRUE)
 #library(reticulate,lib.loc=".",verbose=TRUE)
 
 #library(reticulate,lib.loc = 'packrat/src/')
-py_install(c('numpy','pandas','nltk','gensim'))
-nltkdown <- import('nltk')
-nltkdown$download('all')
-source_python('TextSimilarity-Production.py')
+#file.path(R.home("bin"),"R")
+
+library(reticulate)
+
+#py_install(c('numpy','pandas','nltk','gensim'))
+#nltkdown <- import('nltk')
+#nltkdown$download('all')
+#source_python('TextSimilarity-Production.py')
 #library(shiny,lib.loc = 'packrat/src/')
+
+library(shiny)
 
 # Define server logic required to draw a histogram
 shinyServer(function(input, output, session) {
