@@ -178,7 +178,7 @@ def Similarity_Criteria(data1,criteria,MAX_CAT,Max_Iter):
             
     if criteria == 'Word2Vec-PretrainedGoogle':
         import gensim.models.keyedvectors as word2vec
-        model = word2vec.KeyedVectors.load_word2vec_format('GoogleNews-vectors-negative300.bin.gz', binary=True)
+        model = word2vec.KeyedVectors.load_word2vec_format('C:/Users/antutlan/Microsoft/DSSInsightsAA - OPS-NWS Leakage/SACaseNotesExperimentation/GoogleNews-vectors-negative300.bin.gz', binary=True)
         
         from scipy import spatial
 
@@ -241,7 +241,7 @@ def Similarity_Criteria(data1,criteria,MAX_CAT,Max_Iter):
     if criteria=='Word2Vec-Text8Corpus':
         from gensim.models.word2vec import Text8Corpus
         from gensim.models import Word2Vec
-        w2v_model2 = Word2Vec(Text8Corpus('text8'), size=100, window=5, min_count=5, workers=4)
+        w2v_model2 = Word2Vec(Text8Corpus('C:/Users/antutlan/Downloads/text8/text8'), size=100, window=5, min_count=5, workers=4)
         index2word_set = set(w2v_model2.wv.index2word)
 
         def avg_feature_vector_Text8(sentence, model, num_features, index2word_set):
