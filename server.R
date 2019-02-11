@@ -20,6 +20,8 @@
 #install.packages("Matrix")
 
 #packrat::status()
+install.packages("packrat/src/Matrix/Matrix_1.2-9.tar.gz",lib=".",repos=NULL,verbose=TRUE)
+library(Matrix,lib.loc=".",verbose=TRUE)
 
 install.packages("packrat/src/reticulate/b05b0982757190ea88941176808642ffb89cc6d0.tar.gz",lib=".",repos=NULL,verbose=TRUE)
 library(reticulate,lib.loc=".",verbose=TRUE)
